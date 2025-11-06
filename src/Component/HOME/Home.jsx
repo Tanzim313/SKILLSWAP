@@ -35,7 +35,7 @@ const Home =()=>{
       // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
       spaceBetween={50}
-      slidesPerView={3}
+      slidesPerView={1}
       navigation
       autoplay={{
           delay: 1000,
@@ -50,7 +50,7 @@ const Home =()=>{
             <SwiperSlide className="" key={skill.skillId}>
                 
                 <img 
-                className="w-[400px] h-[400px]" 
+                className="w-full h-[400px]" 
                 src={skill.image} 
                 alt={skill.skillName} />
                 
@@ -65,7 +65,7 @@ const Home =()=>{
         <div>
             <h1 className="text-center text-4xl font-bold mb-20 mt-20">Popular Skills</h1>
              
-            <div className="grid grid-cols-3 gap-5">
+            <div className="p-20 md:p-0 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {data.map((skillData)=>(
                 <div key={skillData.skillId} className="">
                     
@@ -109,7 +109,7 @@ const Home =()=>{
                     <h1 className="mt-20 text-center text-xl font-bold">Top Rated Providers</h1>
 
 
-                   <div className="grid grid-cols-3 p-20 gap-4">
+                   <div className="grid sm:grid-cols-3 p-20 gap-4">
                     {data
                     .filter(skill=>skill.rating>=4.8)
                     .slice(0,3)
@@ -143,22 +143,22 @@ const Home =()=>{
                         <p>We make it super easy to find your perfect skill-swap buddy and start learning together!</p>
 
                        </div>
-                    <div className="p-12 flex flex-col items-center justify-center text-xl border-2 w-100 h-50">
+                    <div className="p-12 flex flex-col items-center justify-center text-xl border-2 max-w-100 h-60">
                         <h1 className="font-bold flex flex-col items-center"><CgBrowse className="size-20" />Browse Skills</h1>
                         <p>Explore skills from verified trainers</p>
                     </div>
-                    <div className="p-10 flex flex-col justify-center items-center border-2 w-100 h-50 text-xl">
+                    <div className="p-10 flex flex-col justify-center items-center border-2 max-w-100 h-60 text-xl">
                         <h1 className="font-bold flex flex-col items-center"><SiCodementor className="size-20" />Choose Your Mentor</h1>
                         <p>Compare ratings,prices and reviews before booking</p>
                     </div>
 
-                    <div className="p-12 border-2 w-100 h-50 flex flex-col justify-center items-center text-xl">
+                    <div className="p-12 border-2 max-w-100 h-60 flex flex-col justify-center items-center text-xl">
                         <h1 className="font-bold flex flex-col justify-center items-center"><FaAddressBook className="size-20 mb-4" />Book Session</h1>
                         <p>Select a time and confirm your booking instantly</p>
                     </div>
                     
 
-                    <div className="p-12 text-xl flex flex-col justify-center items-center border-2 w-100 h-50">
+                    <div className="p-12 text-xl flex flex-col justify-center items-center border-2 max-w-100 h-60">
                         <h1 className="font-bold flex flex-col justify-center items-center"><SiGreatlearning className="size-20 mb-4"/>Start Learning</h1>
                         <p>Join The Live Or Recorded Session And Grow Your Skill</p>
                     </div>
@@ -191,27 +191,27 @@ const Home =()=>{
 
             </div>
 
-            <div className="p-20">
-            <div className="border-2 p-10 flex flex-col justify-center items-center text-center">
-                <h1 className="text-5xl font-bold mb-10">Why Choose Us</h1>
+            <div className="p-10 sm:p-20">
+            <div className="sm:p-10 flex flex-col justify-center items-center text-center">
+                <h1 className="text-2xl sm:text-5xl font-bold mb-10">Why Choose Us</h1>
 
                 <div className="mb-20">
                     <ul className="">
-                        <li className="mb-4 rounded-md w-80 h-10 flex gap-4 justify-center items-center font-bold text-xl bg-cyan-500 shadow text-white">
+                        <li className="mb-4 rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-cyan-500 shadow text-white">
                             <FaRegHandPointRight />
                             Expert Mentors
                         </li>
-                        <li className="mb-4 rounded-md w-80 h-10 flex gap-4 justify-center items-center font-bold text-xl bg-cyan-500 shadow text-white">
+                        <li className="mb-4 rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-cyan-500 shadow text-white">
                             <FaRegHandPointRight />
                             Affordable Pricing
                             </li>
-                        <li className="mb-4 rounded-md w-80 h-10 flex gap-4 justify-center items-center font-bold text-xl bg-cyan-500 shadow text-white">
+                        <li className="mb-4 rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-cyan-500 shadow text-white">
                             <FaRegHandPointRight />
                             24 Hours Support Session</li>
-                        <li className="mb-4 rounded-md w-80 h-10 flex gap-4 justify-center items-center font-bold text-xl bg-cyan-500 shadow text-white">
+                        <li className="mb-4 rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-cyan-500 shadow text-white">
                             <FaRegHandPointRight />
                             Real Project Experience</li>
-                        <li className="rounded-md w-80 h-10 flex gap-4 justify-center items-center font-bold text-xl bg-cyan-500 shadow text-white">
+                        <li className="rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-cyan-500 shadow text-white">
                             <FaRegHandPointRight />
                             Certificate On Completion</li>
                     </ul>
