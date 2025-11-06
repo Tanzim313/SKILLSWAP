@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 
 import { MdStarOutline } from "react-icons/md";
 import 'swiper/css';
@@ -30,13 +30,17 @@ const Home =()=>{
 
         <div>
          
-            <div className="mt-10 mb-10">
+            <div className="mt-30 mb-30">
                 <Swiper
       // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
       spaceBetween={50}
       slidesPerView={3}
       navigation
+      autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+        }}
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
       onSwiper={(swiper) => console.log(swiper)}
@@ -45,7 +49,10 @@ const Home =()=>{
         {data.map((skill)=>(
             <SwiperSlide className="" key={skill.skillId}>
                 
-                <img className="w-[250px]" src={skill.image} alt={skill.skillName} />
+                <img 
+                className="w-[400px] h-[400px]" 
+                src={skill.image} 
+                alt={skill.skillName} />
                 
             </SwiperSlide>
         ))}
