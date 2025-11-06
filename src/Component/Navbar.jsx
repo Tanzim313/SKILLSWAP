@@ -17,7 +17,7 @@ const Navbar =()=>{
 
     const links = <>
             { !user && <>
-                        <li className="text-xl font-bold"><NavLink to="/home">Home</NavLink></li>
+                        <li className="text-xl font-bold"><NavLink to="/">Home</NavLink></li>
                         <li className="text-xl font-bold"><NavLink to="/login">Login</NavLink></li>
                         <li className="text-xl font-bold"><NavLink to="/register">Register</NavLink></li>
                         
@@ -26,7 +26,7 @@ const Navbar =()=>{
             {
                 user && <>
                         <li className="text-xl font-bold"><NavLink to="/profile">My Profile</NavLink></li>
-                        <li className="text-xl font-bold"><NavLink to="/home">Home</NavLink></li>
+                        <li className="text-xl font-bold"><NavLink to="/">Home</NavLink></li>
                 </>
             }
     </>

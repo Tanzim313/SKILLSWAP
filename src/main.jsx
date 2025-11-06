@@ -13,6 +13,7 @@ import Profile from './Component/MyProfiles/Profile.jsx';
 import PrivateRoutes from './Routes/PrivateRoutes.jsx';
 //import allApp from './Component/APP/AllApp.jsx';
 import AppDetails from './Component/APP/AppDetails.jsx';
+import ForgotPassword from './Component/ForgotPassword.jsx';
 
 
 const router = createBrowserRouter([
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
               return data;
         },
 
-        path:'/home',
+        path:'/',
         element: <Home></Home>
        
 
@@ -71,6 +72,9 @@ const router = createBrowserRouter([
         <PrivateRoutes>
             <Profile></Profile>
         </PrivateRoutes>
+      },{
+        path: 'forgot-password',
+        Component: ForgotPassword
       }
     ]
 

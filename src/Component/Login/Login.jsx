@@ -76,15 +76,9 @@ const Login = () =>{
 
     const handleForgetPassword =()=>{
                 const email = emailRef.current.value;
-
-                sendPasswordResetEmail(auth,email)
-                .then(()=>{
-                        toast.error('please cheack your email!')
-                })
-                .catch(()=>{
-                    
-                })
+                navigate("/forgot-password",{state:{email}});
     }
+
 
 
     const handleGoogleSignIn=()=>{
@@ -98,6 +92,9 @@ const Login = () =>{
             })
             .catch(error=>toast.error(error.message));
     }
+
+
+    
 
 
     return(
