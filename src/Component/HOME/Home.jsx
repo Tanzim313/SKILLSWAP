@@ -62,10 +62,10 @@ const Home =()=>{
             </div>
 
 
-        <div>
+        <div className="flex flex-col justify-center items-center">
             <h1 className="text-center text-4xl font-bold mb-20 mt-20">Popular Skills</h1>
              
-            <div className="p-20 md:p-0 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="p-20 md:p-0 grid md:grid-cols-2 lg:grid-cols-3 gap-y-5 md:gap-x-5">
             {data.map((skillData)=>(
                 <div key={skillData.skillId} className="">
                     
