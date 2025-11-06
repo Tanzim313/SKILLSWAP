@@ -1,0 +1,90 @@
+[
+  {
+    "feedbackId": 1,
+    "skillId": 101,
+    "name": "Rahim Uddin",
+    "avatar": "https://media.istockphoto.com/id/868785846/photo/a-cheerful-muslim-man.jpg?s=612x612&w=is&k=20&c=QbOQGEULS4qaNRuATDYQlJK1ivZalrcZ-mq1Sjty4_A=",
+    "course": "Web Development",
+    "rating": 5,
+    "comment": "Excellent instructor — practical examples and clear explanations. Highly recommended!",
+    "date": "2025-08-12",
+    "verified": true
+  },
+  {
+    "feedbackId": 2,
+    "skillId": 102,
+    "name": "Maya Akter",
+    "avatar": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg",
+    "course": "Graphic Design",
+    "rating": 4,
+    "comment": "Very helpful course. Would love more real-world projects though.",
+    "date": "2025-09-05",
+    "verified": true
+  },
+  {
+    "feedbackId": 3,
+    "skillId": 103,
+    "name": "Sabbir Hossain",
+    "avatar": "/avatars/sabbir.jpg",
+    "course": "UI/UX Design",
+    "rating": 5,
+    "comment": "Great mentoring and timely feedback on assignments. Got my first freelance gig!",
+    "date": "2025-07-20",
+    "verified": true
+  },
+  {
+    "feedbackId": 4,
+    "skillId": 101,
+    "name": "Nusrat Jahan",
+    "avatar": "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg",
+    "course": "Web Development",
+    "rating": 4,
+    "comment": "Good pace and structure. Would appreciate more backend content.",
+    "date": "2025-10-01",
+    "verified": false
+  },
+  {
+    "feedbackId": 5,
+    "skillId": 104,
+    "name": "Imran Khan",
+    "avatar": "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg",
+    "course": "Digital Marketing",
+    "rating": 5,
+    "comment": "Practical, up-to-date content. I saw measurable results in campaign performance.",
+    "date": "2025-06-30",
+    "verified": true
+  },
+  {
+    "feedbackId": 6,
+    "skillId": 102,
+    "name": "Taslima Begum",
+    "avatar": "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg",
+    "course": "Graphic Design",
+    "rating": 3,
+    "comment": "Instructor knew a lot but sometimes explanations were rushed.",
+    "date": "2025-09-18",
+    "verified": false
+  },
+  {
+    "feedbackId": 7,
+    "skillId": 105,
+    "name": "Rafi Ahmed",
+    "avatar": "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg",
+    "course": "Python for Data Science",
+    "rating": 5,
+    "comment": "Clear examples, good exercises. Helped me prepare for interviews.",
+    "date": "2025-05-22",
+    "verified": true
+  },
+  {
+    "feedbackId": 8,
+    "skillId": 103,
+    "name": "Sadia Noor",
+    "avatar": "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg",
+    "course": "UI/UX Design",
+    "rating": 4,
+    "comment": "Loved the hands-on design critiques. More mobile-specific lessons would be great.",
+    "date": "2025-08-08",
+    "verified": true
+  }
+]
