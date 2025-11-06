@@ -11,7 +11,7 @@ import Login from './Component/Login/Login.jsx';
 import AuthProvider from './Authprovider/AuthProvider.jsx';
 import Profile from './Component/MyProfiles/Profile.jsx';
 import PrivateRoutes from './Routes/PrivateRoutes.jsx';
-import allApp from './Component/APP/AllApp.jsx';
+//import allApp from './Component/APP/AllApp.jsx';
 import AppDetails from './Component/APP/AppDetails.jsx';
 
 
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
 
     children:[
       {
-        ///index:true,
+        //index:true,
         id: 'home-loader',
         loader:async()=>{
               const res = await fetch('/skill.json');
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
               return data;
         },
 
-        path:'home',
+        path:'/home',
         element: <Home></Home>
        
 

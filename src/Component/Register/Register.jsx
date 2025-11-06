@@ -32,6 +32,22 @@ const Register =()=>{
         setError('');
         setSuccess(false);
 
+        const Uppercase = /[A-Z]/.test(password);
+        const Lowercase = /[a-z]/.test(password);
+        const isLength = password.length>=6;
+
+        if(!Uppercase){
+            setError('Password Must Contain At Least 1 UpperCase Letter');
+            return;
+        }
+        if(!Lowercase){
+            setError('PassWord Must Contain At Least 1 LowerCase Letter');
+            return;
+        }
+        if(!isLength){
+            setError('PassWord Must be at Least 6 characters Long');
+            return ;
+        }
 
         if(!terms){
             setError('Please accept our terms and conditions');
@@ -65,10 +81,12 @@ const Register =()=>{
                         alert('please login to your email and verify our email')
                     })
 
-                    auth.signOut()
-                    .then(()=>{
-                            navigate("/login");
-                    }); 
+                    navigate("/home");
+                    
+                    //auth.signOut()
+                    ///.then(()=>{
+                    //        navigate("/login");
+                   // }); 
 
             })
             .catch((error)=>{

@@ -3,7 +3,9 @@ import React, { use, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 //import { auth } from "../../firebase.init";
 import { AuthContext } from "../../Authprovider/AuthContext";
-import { sendPasswordResetEmail } from "firebase/auth";
+import { GoogleAuthProvider, sendPasswordResetEmail } from "firebase/auth";
+import toast, { Toaster } from "react-hot-toast";
+import { auth } from "../../firebase.init";
 
 
 
@@ -12,6 +14,7 @@ const Login = () =>{
     const {signInUser,signInWithGoogle} = use(AuthContext);
 
     const location = useLocation();
+    const from = location.state?.from?.pathname || "/home";
 
 
     const [error,setError] = useState('');
@@ -33,12 +36,20 @@ const Login = () =>{
                 console.log(result.user);
                 event.target.reset();
 
-                if(!result.user.emailVerified){
-                            alert('please verify your email address')
+
+                 toast.success("Login Successful!")
+                    navigate(from,{replace:true});
+
+                {/**if(!result.user.emailVerified){
+                          toast.error('please verify your email address')
                 }
                 else{
-                    navigate(location.state || '/home');
-                }
+                    toast.success("Login Successful!")
+                    navigate(from,{replace:true});
+                    //navigate(location.state || '/home');
+                }**/}
+
+
             })
             .catch(error => {
                 console.log(error.message);
@@ -68,7 +79,7 @@ const Login = () =>{
 
                 sendPasswordResetEmail(auth,email)
                 .then(()=>{
-                        alert('please cheack your email!')
+                        toast.error('please cheack your email!')
                 })
                 .catch(()=>{
                     
@@ -77,18 +88,22 @@ const Login = () =>{
 
 
     const handleGoogleSignIn=()=>{
+       
             signInWithGoogle()
             .then((result)=>{
+
                 console.log(result.user)
-                navigate(location?.state || '/home')
+                 navigate(from,{replace:true});
+               // navigate(location?.state || '/home')
             })
-            .catch()
+            .catch(error=>toast.error(error.message));
     }
 
 
     return(
         <div>
 
+        <Toaster></Toaster>
 
             <div className="hero bg-base-200 min-h-screen">
   <div className="hero-content flex-col lg:flex-row-reverse">
