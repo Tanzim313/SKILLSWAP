@@ -81,8 +81,8 @@ const Register =()=>{
                         alert('please login to your email and verify our email')
                     })
 
-                    navigate("/home");
-                    
+                    navigate("/");
+
                     //auth.signOut()
                     ///.then(()=>{
                     //        navigate("/login");
