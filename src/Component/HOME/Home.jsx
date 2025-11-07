@@ -65,19 +65,19 @@ const Home =()=>{
         <div className="flex flex-col justify-center items-center">
             <h1 className="text-center text-4xl font-bold mb-20 mt-20">Popular Skills</h1>
              
-            <div className="p-20 md:p-0 grid md:grid-cols-2 lg:grid-cols-3 gap-y-5 md:gap-x-5">
+            <div className="p-8 md:p-0 grid md:grid-cols-2 lg:grid-cols-3 gap-y-5 md:gap-x-5">
             {data.map((skillData)=>(
                 <div key={skillData.skillId} className="">
                     
                     <div className="border-2">
                         <div className="p-4 flex flex-col items-center text-center">
                         
-                        <img className="w-[300px] h-[400px] mt-10" src={skillData.image} alt="" />
+                        <img className="w-[300px] h-[300px] mt-10" src={skillData.image} alt="" />
 
                             <h1 className="mt-10 font-bold">{skillData.skillName}</h1>
                         <div className="flex flex-row gap-x-15 mt-4 mb-4 items-center">
-                            <p className="flex items-center gap-1"><MdStarOutline className="size-6" />{skillData.rating}</p>
-                            <p>${skillData.price}</p>
+                            <p className="flex justify-center items-center gap-1 w-18 p-1 font-bold text-black bg-amber-400 rounded-md"><MdStarOutline className="size-6" />{skillData.rating}</p>
+                            <p className="w-12 bg-amber-400 rounded-md p-1 text-black font-bold">${skillData.price}</p>
                         </div>
 
                         <button className="mb-10 font-bold btn btn-primary ">
@@ -121,10 +121,10 @@ const Home =()=>{
                             className="w-50" 
                             src={skill.image} alt="" />
 
-                            <div className="text-center mt-5 mb-5">
+                            <div className="text-center mt-5 mb-5 flex flex-col justify-center items-center">
                                 <h1 className="text-2xl font-bold mb-3">{skill.providerName}</h1>
                                 <p className="font-bold mb-4">{skill.skillName}</p>
-                                <p className=" flex gap-1 items-center justify-center text-xl font-bold text-yellow-600"><MdStarOutline className="size-6 " /> {skill.rating}</p>
+                                <p className=" flex gap-1 items-center justify-center text-xl font-bold text-black w-20 bg-amber-400 rounded-md"><MdStarOutline className="size-6 " /> {skill.rating}</p>
                             </div>
                             
                         </div>
@@ -184,7 +184,7 @@ const Home =()=>{
 
 
 
-            <div className="p-20">
+            <div className="p-10 sm:p-20">
 
                 <StudentFeed></StudentFeed>
 
@@ -197,21 +197,21 @@ const Home =()=>{
 
                 <div className="mb-20">
                     <ul className="">
-                        <li className="mb-4 rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-cyan-500 shadow text-white">
+                        <li className="mb-4 rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-gradient-to-br from-[#6666ff] to-[#cc99ff20] shadow text-white">
                             <FaRegHandPointRight />
                             Expert Mentors
                         </li>
-                        <li className="mb-4 rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-cyan-500 shadow text-white">
+                        <li className="mb-4 rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-gradient-to-br from-[#6666ff] to-[#cc99ff20] ">
                             <FaRegHandPointRight />
                             Affordable Pricing
                             </li>
-                        <li className="mb-4 rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-cyan-500 shadow text-white">
+                        <li className="mb-4 rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-gradient-to-br from-[#6666ff] to-[#cc99ff20] shadow text-white">
                             <FaRegHandPointRight />
                             24 Hours Support Session</li>
-                        <li className="mb-4 rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-cyan-500 shadow text-white">
+                        <li className="mb-4 rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-gradient-to-br from-[#6666ff] to-[#cc99ff20]  shadow text-white">
                             <FaRegHandPointRight />
                             Real Project Experience</li>
-                        <li className="rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-cyan-500 shadow text-white">
+                        <li className="rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-gradient-to-br from-[#6666ff] to-[#cc99ff20]  shadow text-white">
                             <FaRegHandPointRight />
                             Certificate On Completion</li>
                     </ul>
