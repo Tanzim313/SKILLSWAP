@@ -34,7 +34,7 @@ const Navbar =()=>{
     return(
 
         <div className="">
-                <div className="navbar bg-base-100 shadow-sm ">
+                <div className="navbar bg-[#000000] shadow-sm ">
   <div className=" navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost sm:hidden">
@@ -62,9 +62,9 @@ const Navbar =()=>{
    <img className="sm:w-[50px] sm:h-[50px] w-[40px] h-[40px] rounded-full border-2 border-b-cyan-800 border-e-amber-400 border-l-blue-400 " src={user.photoURL} alt="" /> 
 </div >
 
-    <a onClick={handleSignOut} className="btn btn-primary w-15 sm:w-20 ">Signout</a>
+    <a onClick={handleSignOut} className="btn btn-primary bg-[#33ccff] font-extrabold w-15 sm:w-20 ">Signout</a>
    </div>
-   :<Link className="btn btn-accent font-bold text-xl w-15 sm:w-20 " to="/login">Login</Link>}
+   :<Link className="btn btn-accent bg-[#33ccff] font-bold text-xl w-15 sm:w-20 " to="/login">Login</Link>}
   </div>
 </div>
         </div>

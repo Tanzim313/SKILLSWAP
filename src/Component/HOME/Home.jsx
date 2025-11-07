@@ -30,7 +30,7 @@ const Home =()=>{
 
         <div>
          
-            <div className="mt-30 mb-30">
+            <div className="mt-30 mb-30 p-4">
                 <Swiper
       // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
@@ -83,7 +83,7 @@ const Home =()=>{
                         <button className="mb-10 font-bold btn btn-primary ">
                             
                            <Link to={`/appDetails/${skillData.skillId}`}>
-                                 View Details
+                                View Details
                            </Link>
                             
                         </button>
@@ -197,21 +197,21 @@ const Home =()=>{
 
                 <div className="mb-20">
                     <ul className="">
-                        <li className="mb-4 rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-gradient-to-br from-[#6666ff] to-[#cc99ff20] shadow text-white">
+                        <li className="mb-4 rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-gradient-to-br from-[#6666ff] to-[#cc99ff] shadow text-white">
                             <FaRegHandPointRight />
                             Expert Mentors
                         </li>
-                        <li className="mb-4 rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-gradient-to-br from-[#6666ff] to-[#cc99ff20] ">
+                        <li className="mb-4 rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-gradient-to-br from-[#6666ff] to-[#cc99ff] text-white ">
                             <FaRegHandPointRight />
                             Affordable Pricing
                             </li>
-                        <li className="mb-4 rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-gradient-to-br from-[#6666ff] to-[#cc99ff20] shadow text-white">
+                        <li className="mb-4 rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-gradient-to-br from-[#6666ff] to-[#cc99ff] shadow text-white">
                             <FaRegHandPointRight />
                             24 Hours Support Session</li>
-                        <li className="mb-4 rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-gradient-to-br from-[#6666ff] to-[#cc99ff20]  shadow text-white">
+                        <li className="mb-4 rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-gradient-to-br from-[#6666ff] to-[#cc99ff]  shadow text-white">
                             <FaRegHandPointRight />
                             Real Project Experience</li>
-                        <li className="rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-gradient-to-br from-[#6666ff] to-[#cc99ff20]  shadow text-white">
+                        <li className="rounded-md w-[300px] h-10 flex gap-2 justify-center items-center font-bold text-xl bg-gradient-to-br from-[#6666ff] to-[#cc99ff]  shadow text-white">
                             <FaRegHandPointRight />
                             Certificate On Completion</li>
                     </ul>

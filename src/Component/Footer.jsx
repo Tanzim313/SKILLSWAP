@@ -6,16 +6,17 @@ const Footer =()=>{
     return(
 
         <div>
-               <footer className="footer sm:footer-horizontal bg-base-300 text-base-content p-10">
+          
+  <footer className="footer sm:footer-horizontal bg-base-300 text-base-content p-10">
   <nav>
-    <h6 className="footer-title">Services</h6>
-    <a className="link link-hover">Branding</a>
-    <a className="link link-hover">Design</a>
-    <a className="link link-hover">Marketing</a>
-    <a className="link link-hover">Advertisement</a>
+    <h6 className="footer-title">Contact info</h6>
+    <p className="">Email: support@skillswap.com</p>
+    <p className="">Phone: +880 1777-000000</p>
+    <p className="">Address: IIUC Campus, Kumira, Chattogram</p>
+    <p className="">Office Hours: Sun–Thu, 9:00 AM – 5:00 PM</p>
   </nav>
   <nav>
-    <h6 className="footer-title">Company</h6>
+    <h6 className="footer-title">privacy policy</h6>
     <a className="link link-hover">About us</a>
     <a className="link link-hover">Contact</a>
     <a className="link link-hover">Jobs</a>
