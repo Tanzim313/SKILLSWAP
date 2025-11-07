@@ -1,17 +1,26 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project Name : SkillSwap
 
-Currently, two official plugins are available:
+skillsawp is a platfrom  where men can access various skill-based course.SkillSwap is to provide individuals with the opportunity to enhance their skills by taking courses in a wide range of sub.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+live Link1:https://stalwart-donut-45dcb7.netlify.app/
+Live Link2:https://sparkling-brioche-62de77.netlify.app/
+Live Link3:
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Key Features:
 
-## Expanding the ESLint configuration
+1.Variety of Courses
+2.Skill Certification
+3.Interactive Learning
+4.Community Support
+5.Personalized Recommendations
+6.Flexible Learning
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# SKILLSWAP
+
+npm packages:
+React-Spring
+react-hot-toast
+swiper
+react-icons ..etc.
