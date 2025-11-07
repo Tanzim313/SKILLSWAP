@@ -51,30 +51,32 @@ const AppDetails =()=>{
     }=skillData
 
     return(
-        <div className="p-25">
+        <div className="p-8 sm:p-30">
             <div><Toaster/></div>
             
-            <div className="flex flex-col justify-center items-center p-10 border-2">
+            <div className="flex flex-col justify-center items-center p-4 border-2 mb-10">
 
                 <img 
-                className="max-w-100" 
+                className="min-w-[250px]" 
                 src={image} alt="" />
                 
-                <div className="text-center mt-10 font-bold">
+                <div className="text-center mt-10 font-bold flex flex-col justify-center items-center">
                     <h1 className="text-3xl mb-2">{skillName}</h1>
                     
-                    <div className="flex flex-row justify-around items-center mt-4">
-                        <p>${price}</p>
-                        <p>{rating}</p>
-                    </div>
-
                     <div className="flex flex-col items-center justify-center p-2">
                      <p>Instractor Name : {providerName}</p>
-                     <p>Instractor Email : {providerEmail}</p>
+                     <p>Email : {providerEmail}</p>
                    </div>
 
-                    <p className="text-xl mt-10 mb-5">Slots Available : {slotsAvailable}</p>
-                    <p>{description}</p>
+                    <p className="text-xl mt-5 mb-5 w-[200px] bg-amber-500 p-1 rounded-md">Slots Available : {slotsAvailable}</p>
+                    
+                    <div className="mb-4 flex flex-row justify-between gap-20 items-center mt-4 ">
+                        <p className="w-12 bg-amber-500 rounded-md">${price}</p>
+                        <p className="w-12 bg-amber-500 rounded-md">{rating}</p>
+                    </div>
+
+                    
+                    <p className="">{description}</p>
                     
                 </div>
 
@@ -83,8 +85,8 @@ const AppDetails =()=>{
             </div>
 
 
-            <div>
-                    <h1>Book Session</h1>
+            <div className="flex flex-col justify-center items-center border-2 p-8">
+                    <h1 className="text-2xl font-bold mb-4">Book Session</h1>
 
                     <div>
                         <form onSubmit={handleSubmit} action="">
@@ -93,7 +95,7 @@ const AppDetails =()=>{
                         <input 
                         type="text" 
                         placeholder="Type here" 
-                        className="input"
+                        className="input w-70"
                         value={name}
                         onChange={(e)=> setName(e.target.value)}
                         required
@@ -101,7 +103,7 @@ const AppDetails =()=>{
                         />
                        </label>
                         
-                        <label className="floating-label">
+                        <label className="floating-label mt-2 mb-2">
                             <span>Your Email</span>
                             <input 
                             type="email" 
@@ -114,7 +116,7 @@ const AppDetails =()=>{
                             />
                         </label>
 
-                        <button className="btn  btn-primary">Submit</button>
+                        <button className="btn  btn-primary w-70">Submit</button>
 
                         </form>
 

@@ -6,6 +6,8 @@ import { AuthContext } from "../../Authprovider/AuthContext";
 import { GoogleAuthProvider, sendPasswordResetEmail } from "firebase/auth";
 import toast, { Toaster } from "react-hot-toast";
 import { auth } from "../../firebase.init";
+import { IoEye } from "react-icons/io5";
+import { IoMdEyeOff } from "react-icons/io";
 
 
 
@@ -15,11 +17,17 @@ const Login = () =>{
 
     const location = useLocation();
     const from = location.state?.from?.pathname || "/";
+    const [showPassword,setShowPassword] = useState(false);
 
 
     const [error,setError] = useState('');
     const emailRef = useRef();
     const navigate = useNavigate();
+
+    const handleTogglePasswordShow = (e)=>{
+      e.preventDefault();
+      setShowPassword(!showPassword);
+    }
 
 
     const handleSignIn =(event)=>{
@@ -121,8 +129,19 @@ const Login = () =>{
           className="input" 
           ref={emailRef}
           placeholder="Email" />
+
           <label className="label">Password</label>
-          <input type="password" name="password" className="input" placeholder="Password" />
+           <div className="relative">
+                          <input 
+                              type={showPassword? "text":"password"}
+                              name="password" 
+                              className="input" 
+                              placeholder="Password" />
+          
+                          <button onClick={handleTogglePasswordShow} className="absolute right-2 top-1 rounded-md btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">
+                              {showPassword? <IoEye /> : <IoMdEyeOff /> }</button>
+            </div>
+
           <div><a onClick={handleForgetPassword} className="link link-hover">Forgot password?</a></div>
           <button className="btn btn-neutral mt-4">Login</button>
         </fieldset>
